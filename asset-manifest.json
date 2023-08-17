@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/karacalla/static/css/main.467d5cba.css",
+    "main.js": "/karacalla/static/js/main.3fbfc6c0.js",
+    "static/media/image1.webp": "/karacalla/static/media/image1.6f7b3726b824b79be7c4.webp",
+    "static/media/price5.webp": "/karacalla/static/media/price5.9a4ee8f44913459d4adf.webp",
+    "static/media/Sof3.jpg": "/karacalla/static/media/Sof3.9a31a96f5679d11ed111.jpg",
+    "static/media/image5.webp": "/karacalla/static/media/image5.aedaf4857dbd5cabdec3.webp",
+    "static/media/image3.webp": "/karacalla/static/media/image3.23fd0597a8b7b5d04a1b.webp",
+    "static/media/image4.webp": "/karacalla/static/media/image4.cc21067f86e6beae3682.webp",
+    "static/media/image2.webp": "/karacalla/static/media/image2.edbbc2995981e55db98c.webp",
+    "static/media/price4.webp": "/karacalla/static/media/price4.7acc0ec741e53898a464.webp",
+    "static/media/price1.webp": "/karacalla/static/media/price1.be435a901b6eea37a4d2.webp",
+    "static/media/price3.webp": "/karacalla/static/media/price3.f622c2fa81e402e00b4a.webp",
+    "static/media/price2.webp": "/karacalla/static/media/price2.c204f69893df66c0ba0d.webp",
+    "index.html": "/karacalla/index.html",
+    "main.467d5cba.css.map": "/karacalla/static/css/main.467d5cba.css.map",
+    "main.3fbfc6c0.js.map": "/karacalla/static/js/main.3fbfc6c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.467d5cba.css",
+    "static/js/main.3fbfc6c0.js"
+  ]
+}
