@@ -4,7 +4,7 @@ import price3 from "../../images/price/price3.webp"
 import price4 from "../../images/price/price4.webp"
 import price5 from "../../images/price/price5.webp"
 
-import { PriceSection, PriceTitle, PriceList, PriceItem, PriceImg, PriceContent, PriceTitleSecond,PriceText, PriceTextSecond } from "./Prices.styled";
+import { PriceSection, PriceTitle, PriceList, PriceItem, PriceImg, PriceContent, PriceTitleSecond, PriceTextSecond } from "./Prices.styled";
 
 export const Prices = () => {
     return (
