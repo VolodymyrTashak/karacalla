@@ -92,3 +92,7 @@ img {
 .logo {
   margin: 0;
 }
+
+.no-scroll-modal {
+  overflow: hidden;
+}
