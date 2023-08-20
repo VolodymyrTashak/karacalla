@@ -62,19 +62,17 @@ export const PriceTitleSecond = styled.h3`
 
 export const PriceText = styled.p`
  color: #000;
- font-size: 15px;
- font-weight: 200;
- line-height: 20px;
- letter-spacing: 1px;
- margin-bottom: 10px;
- `;
-
- export const PriceTextSecond = styled.p`
- color: #000;
  font-size: 16px;
  font-weight: 400;
  line-height: 18px;
  letter-spacing: 1px;
  margin: 10px 0;
  text-align: left;
+ `;
+
+ export const PriceTextSecond = styled.span`
+ font-size: 16px;
+ font-weight: 700;
+ line-height: 18px;
+ letter-spacing: 1px;
  `;

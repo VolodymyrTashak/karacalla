@@ -16,7 +16,7 @@ export const Backdrop = styled.div`
 export const MyForm= styled.form`
  position: relative;
  background-color: #303A53 ;
- padding: 40px 21px;
+ padding: 20px 21px;
  display: grid;
  justify-items: center;
  border-radius: 10px;
@@ -28,7 +28,7 @@ export const MyForm= styled.form`
   }
 
   @media (min-width: 550px) {
-    width: 400px;
+    width: 410px;
     min-height: 400px;
   }
 `;
@@ -71,12 +71,14 @@ export const FormInput = styled.input`
  background-color: #272D3D;
  border-radius: 5px;
  border-color: transparent;
+ width: 270px;
+ height: 46px;
+ margin-bottom: 14px;
+ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
- @media (min-width: 320px) and (max-width: 767px) {
+ @media (min-width: 320px) and (max-width: 768px) {
     padding-left: 26px;
-    margin-bottom: 14px;
     width: 260px;
-    height: 46px;
   }
 
   @media (min-width: 768px) {
@@ -84,6 +86,34 @@ export const FormInput = styled.input`
     margin-bottom: 14px;
     width: 320px;
     height: 46px;
+  }
+`;
+
+export const FormTextarea = styled.textarea`
+ color: #757575;
+ background-color: #272D3D;
+ border-radius: 5px;
+ border-color: transparent;
+ display: block;
+ width: 100%;
+ height: 120px;
+ resize: none;
+ box-sizing: border-box;
+ outline: none;
+ padding: 15px;
+ margin-bottom: 14px;
+ cursor: pointer;
+ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ @media (min-width: 320px) and (max-width: 767px) {
+    padding-left: 26px;
+    width: 290px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 26px;
+    margin-bottom: 14px;
+    width: 350px;
   }
 `;
 

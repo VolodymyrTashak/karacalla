@@ -1,4 +1,4 @@
-import { BsInstagram, BsTelegram, BsFacebook } from "react-icons/bs";
+import { BsInstagram, BsTelegram, BsYoutube } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 
 import { FooterSection, FooterBox, FooterInner, FooterSocial, FooterSocialLink } from "./Footer.styled";
@@ -11,17 +11,17 @@ export const Footer = () => {
           <FooterInner>
            <HeaderLogo className="logo" href="#">karacalla</HeaderLogo>
            <FooterSocial>
-             <FooterSocialLink href="" >
+             <FooterSocialLink href="https://www.instagram.com/karacalla_/" >
                <BsInstagram size={24} color="#000"  />
               </FooterSocialLink>
-             <FooterSocialLink href="" >
+             <FooterSocialLink href="https://t.me/Karacalla" >
                <BsTelegram size={24} color="#000" />
               </FooterSocialLink>
              <FooterSocialLink href="" >
                <CgMail size={24} color="#000" />
               </FooterSocialLink>
-             <FooterSocialLink href="" >
-               <BsFacebook size={24} color="#000" />
+             <FooterSocialLink href="https://www.youtube.com/@karacalla5032" >
+               <BsYoutube size={24} color="#000" />
               </FooterSocialLink>
             </FooterSocial>
           </FooterInner>

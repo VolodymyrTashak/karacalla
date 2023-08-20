@@ -1,5 +1,9 @@
 @import-normalize; /* bring in normalize.css styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -95,4 +99,53 @@ img {
 
 .no-scroll-modal {
   overflow: hidden;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #433a3c;
+  z-index: 10;
+  display: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ffa5ba;
+    transform: rotate(360deg);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  }
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  &::before {
+    width: 5px;
+    height: 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #ffffff;
+  }
+  &::after {
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.back-to-top-show {
+  display: block;
 }

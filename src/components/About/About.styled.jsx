@@ -10,6 +10,7 @@ export const AboutSection = styled.section`
 
 export const AboutInner = styled.div`
  display: flex;
+ justify-content: center;
 
  @media (max-width: 910px) {
     flex-direction: column;
