@@ -17,7 +17,7 @@ export const Footer = () => {
              <FooterSocialLink href="https://t.me/Karacalla" >
                <BsTelegram size={24} color="#000" />
               </FooterSocialLink>
-             <FooterSocialLink href="" >
+             <FooterSocialLink href="mailto:sofatasak8@gmail.com" >
                <CgMail size={24} color="#000" />
               </FooterSocialLink>
              <FooterSocialLink href="https://www.youtube.com/@karacalla5032" >

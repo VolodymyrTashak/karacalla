@@ -3,7 +3,6 @@ import { Head, HeaderContainer, HeaderLogo, HeaderBox, HeaderList, HeaderItem, H
 export const Header = () => {
 
   (function () {
-    'use strict';
   
     function trackScroll() {
       var scrolled = window.pageYOffset;
@@ -26,11 +25,11 @@ export const Header = () => {
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
   })();
-  
+
     return (
       <Head>
             <HeaderContainer className="container">
-              <a href="#" className="back-to-top"></a>
+              <button className="back-to-top"></button>
              <HeaderLogo href="#">karacalla</HeaderLogo>
              <HeaderBox>
               <HeaderList>
