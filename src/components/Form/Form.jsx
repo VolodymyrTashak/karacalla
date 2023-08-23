@@ -26,49 +26,31 @@ export const Form = ({ setModalOpen }) => {
         }
     };
 
-    function validateEmail(em) {
-        const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-        return re.test(String(em).toLowerCase());
-    }
-    
-    function validate(email) {
-        const em = document.getElementById('email').value;
-     
-        if (validateEmail(em)) {
-            Notiflix.Notify.warning("Email valid");
-        } else {
-            Notiflix.Notify.warning("Email is not valid");
-        }
-        return false;
-    }
-
     const onFormSubmit = (e) => {
 
-    const form = document.getElementById('myForm');
+     const form = document.getElementById('myForm');
         e.preventDefault(); 
 
         const fromName = document.getElementById("fromName").value;
-        const number = document.getElementById("number").value;
         const email = document.getElementById('email').value;
         const message = document.getElementById("message").value;
         
     
         const templateParams = {
             fromName: fromName,
-            number: number,
-            email: validate(email),
+            email: email,
             message: message
         };
 
-        emailjs.send('service_08dnbzq','template_mhc6ft7', templateParams, '81G-9oCVdRbpYY5R4')
+        emailjs.send('service_bmasswf','template_5gle2xd', templateParams, '0X7KJiltbVjKl9qcR')
         .then((response) => {
-            Notiflix.Notify.warning('SUCCESS!');
+            Notiflix.Notify.success('SUCCESS!');
         }, (err) => {
-            Notiflix.Notify.warning('FAILED');
+            Notiflix.Notify.failure('FAILED');
         });
           form.reset();
           closeModal();
-}
+     };
 
       useEffect(() => {
         body.classList.add('no-scroll-modal');
@@ -90,7 +72,6 @@ export const Form = ({ setModalOpen }) => {
             </ButtonClose>
             <FormTitle>Fill in your details for feedback</FormTitle>
             <FormInput type="text" id="fromName" name="fromName" placeholder="Your name and surname" required />
-            <FormInput type="tel" id="number" placeholder="Your number" required />
             <FormInput type="email" id="email" placeholder="Your email" required />
             <FormTextarea rows={3} id="message" name="message" placeholder="Your message" required />
             <FormBtn type="submit">Send</FormBtn>

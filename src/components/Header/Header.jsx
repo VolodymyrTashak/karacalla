@@ -3,7 +3,6 @@ import { ScrollToTop } from "components/BtnTop/BtnTop";
 import { Head, HeaderContainer, HeaderLogo, HeaderBox, HeaderList, HeaderItem, HeaderItemLink } from "./Header.styled";
 
 export const Header = () => {
-
     return (
       <Head>
             <HeaderContainer className="container">
