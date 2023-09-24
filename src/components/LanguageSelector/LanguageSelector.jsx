@@ -24,28 +24,5 @@ function LanguageSelector() {
     </Box>
   );
 }
-// function LanguageSelector() {
-//   const { i18n } = useTranslation();
-
-//   const changeLanguage = (e) => {
-//     i18n.changeLanguage(e.target.value);
-//   };
-
-//   return (
-//     <Box>
-//       <button onClick={() => changeLanguage('en')}>English</button>
-//       <button onClick={() => changeLanguage('es')}>Español</button>
-//       <button onClick={() => changeLanguage('ua')}><img src={ua} alt="" width={20} height={20} /></button>
-//       {/* <label htmlFor="language-select"></label>
-//       <select id="language-select" onChange={changeLanguage} value={i18n.language}>
-//         <option value="en">En</option>
-//         <option value="es">Es</option>
-//         <option value="ua">Ua</option>
-//         <option value="pl">Pl</option>
-//         <option value="de">De</option>
-//       </select> */}
-//     </Box>
-//   );
-// }
 
 export default LanguageSelector;

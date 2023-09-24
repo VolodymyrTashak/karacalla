@@ -6,8 +6,6 @@ import image3 from "../../images/project/image3.webp"
 import image4 from "../../images/project/image4.webp"
 import image5 from "../../images/project/image5.webp"
 
-
-
 import { ProjectSection, ProjectBox, ProjectTitle, ProjectList, ProjectItem, ProjectItemImg } from "./Project.styled";
 
 export const Project = () => {
