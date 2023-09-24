@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/karacalla/static/css/main.7c4b24f0.css",
-    "main.js": "/karacalla/static/js/main.28c1c868.js",
+    "main.js": "/karacalla/static/js/main.14107a39.js",
+    "static/media/avatar.png": "/karacalla/static/media/avatar.5e98eeb4c2bc843298e0.png",
     "static/media/image1.webp": "/karacalla/static/media/image1.6f7b3726b824b79be7c4.webp",
     "static/media/price5.webp": "/karacalla/static/media/price5.9a4ee8f44913459d4adf.webp",
-    "static/media/Sof3.jpg": "/karacalla/static/media/Sof3.9a31a96f5679d11ed111.jpg",
     "static/media/image5.webp": "/karacalla/static/media/image5.aedaf4857dbd5cabdec3.webp",
     "static/media/image3.webp": "/karacalla/static/media/image3.23fd0597a8b7b5d04a1b.webp",
     "static/media/image4.webp": "/karacalla/static/media/image4.cc21067f86e6beae3682.webp",
@@ -16,10 +16,10 @@
     "index.html": "/karacalla/index.html",
     "static/media/icons-sprite.svg": "/karacalla/static/media/icons-sprite.6e08676eae87ded975fb6a191cab529e.svg",
     "main.7c4b24f0.css.map": "/karacalla/static/css/main.7c4b24f0.css.map",
-    "main.28c1c868.js.map": "/karacalla/static/js/main.28c1c868.js.map"
+    "main.14107a39.js.map": "/karacalla/static/js/main.14107a39.js.map"
   },
   "entrypoints": [
     "static/css/main.7c4b24f0.css",
-    "static/js/main.28c1c868.js"
+    "static/js/main.14107a39.js"
   ]
 }
