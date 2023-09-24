@@ -4,12 +4,17 @@ export const Head = styled.header`
  background: #F2E9E4;
 `;
 
+export const HeaderWrapper = styled.div`
+ position: relative;
+ display: block;
+ padding-top: 25px;
+ padding-bottom: 25px;
+`;
+
 export const HeaderContainer = styled.div`
  display: flex;
  align-items: center;
  justify-content: space-between;
- padding-top: 25px;
- padding-bottom: 25px;
 
  @media (max-width: 590px) {
   flex-direction: column;
@@ -24,21 +29,9 @@ export const HeaderLogo = styled.a`
  text-align: center;
  font-size: 28px;
  font-style: normal;
- font-weight: 200;
+ font-weight: bold;
  line-height: 1.19;
  letter-spacing: 0.1em;
-
- &:before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 35px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    border-radius: 2px;
-  }
 
  &:after {
     position: absolute;
@@ -47,35 +40,27 @@ export const HeaderLogo = styled.a`
     bottom: -7px;
     display: block;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #000;
     border-radius: 2px;
+
   }
 
   @media (max-width: 1200px) {
     font-size: 22px;
-    &:before {
-      bottom: 32px;
-    }
-     }
+  }
 
-     @media (max-width: 620px) {
-      font-size: 20px;
-      &:before {
-        bottom: 30px;
-      }
-    }
+  @media (max-width: 620px) {
+    font-size: 20px;
+  }
 
-    @media (max-width: 590px) {
-      margin-top: 20px;
-    }
+  @media (max-width: 590px) {
+    margin-top: 40px;
+  }
 
-    @media (max-width: 370px) {
-      font-size: 15px;
-      &:before {
-        bottom: 24px;
-      }
-     }
+  @media (max-width: 370px) {
+    font-size: 15px;
+   }
 `;
 
 export const HeaderBox = styled.div`
@@ -100,9 +85,9 @@ export const HeaderItem = styled.li`
     }
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 768px) {
     &:not(:last-child){
-      margin-right: 15px;
+      margin-right: 10px;
     }
   }
 `;

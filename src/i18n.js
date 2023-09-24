@@ -1,0 +1,115 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+i18n
+  .use(initReactI18next)
+  .use(LanguageDetector)
+  .init({
+    resources: {
+        en: {
+            translation: {
+                headerHome: "Home",
+                headerAbout: "About",
+                headerPrice: "Price",
+                headerProject: "Project",
+                headerContact: "Contact",
+                aboutTitle: 'ABOUT ME',
+                aboutText: "Hello, my name is Sofia, I'm an artist and a graphic designer. I'm interested in character design, animalism and illustration. Currently I am a graphic designer student. I'm inspired by art history, nature and literature. This page is my portfolio, you are welcome to investigate my works!",
+                aboutBtn: "WRITE ME",
+                priceTitle: "My Price",
+                priceText1: "Starting price from Portrait:",
+                priceText2: "Starting price from Half:",
+                priceText3: "Starting price from Full:",
+                priceText4: "Starting price from Black and white:",
+                priceText5: "Starting price from Colored:",
+                projectTitle: "My Projects",
+                formTitle: "Fill in your details for feedback",
+                formName: "Your name and surname",
+                formEmail: "Your email",
+                formMessage: "Your message",
+                formBtn: "Send",
+            },
+          },
+          ua: {
+            translation: {
+                headerHome: "Головна",
+                headerAbout: "Про",
+                headerPrice: "Ціна",
+                headerProject: "Проекти",
+                headerContact: "Контакти",
+                aboutTitle: 'ПРО МЕНЕ',
+                aboutText: "Привіт, мене звати Софія, я художник і графічний дизайнер. Мене цікавить дизайн персонажів, анімалізм та ілюстрація. Зараз я студент графічного дизайнера. Мене надихає історія мистецтва, природа та література. Ця сторінка - моє портфоліо, можете ознайомитися з моїми роботами!",
+                aboutBtn: "НАПИСАТИ МЕНІ",
+                priceTitle: "Моя ціна",
+                priceText1: "Початкова ціна Портрета:",
+                priceText2: "Початкова ціна половини:",
+                priceText3: "Початкова ціна повної:",
+                priceText4: "Стартова ціна Чорно-білого:",
+                priceText5: "Стартова ціна кольорового:",
+                projectTitle: "Мої проекти",
+                formTitle: "Заповніть свої дані для зворотного зв'язку",
+                formName: "Ваше ім'я та прізвище",
+                formEmail: "Ваша електронна адреса",
+                formMessage: "Ваше повідомлення",
+                formBtn: "Надіслати",
+            },
+          },
+          pl: {
+            translation: {
+                headerHome: "Główny",
+                headerAbout: "O",
+                headerPrice: "Cena",
+                headerProject: "Projekt",
+                headerContact: "Kontakt",
+                aboutTitle: 'O MNIE',
+                aboutText: "Witam, mam na imię Sofia, jestem artystą i grafikiem. Interesuje mnie projektowanie postaci, zwierzęcość i ilustracja. Aktualnie jestem studentką projektowania graficznego. Inspiruje mnie historia sztuki, przyroda i literatura. Na tej stronie znajduje się moje portfolio. Zapraszam do zapoznania się z moimi pracami!",
+                aboutBtn: "NAPISZ DO MNIE",
+                priceTitle: "Moja cena",
+                priceText1: "Cena wywoławcza Portretu:",
+                priceText2: "Cena wywoławcza połowy:",
+                priceText3: "Cena wywoławcza Full:",
+                priceText4: "Cena wywoławcza wersji czarno-białej:",
+                priceText5: "Cena wywoławcza Kolorowego:",
+                projectTitle: "Moje projekty",
+                formTitle: "Wpisz swoje dane, aby uzyskać opinię",
+                formName: "Twoje imię i nazwisko",
+                formEmail: "Twój email",
+                formMessage: "Twoja wiadomość",
+                formBtn: "Wysłać",
+            },
+          },
+          de: {
+            translation: {
+                headerHome: "Heim",
+                headerAbout: "Um",
+                headerPrice: "Preis",
+                headerProject: "Projekt",
+                headerContact: "Kontakt",
+                aboutTitle: 'ÜBER MICH',
+                aboutText: "Hallo, mein Name ist Sofia, ich bin Künstlerin und Grafikdesignerin. Ich interessiere mich für Charakterdesign, Animalismus und Illustration. Derzeit studiere ich Grafikdesign. Ich lasse mich von Kunstgeschichte, Natur und Literatur inspirieren. Diese Seite ist mein Portfolio, Sie sind herzlich eingeladen, meine Arbeiten zu erkunden!",
+                aboutBtn: "SCHREIB MIR",
+                priceTitle: "Mein Preis",
+                priceText1: "Startpreis Porträt:",
+                priceText2: "Startpreis der Hälfte:",
+                priceText3: "Startpreis Vollversion:",
+                priceText4: "Startpreis Schwarz-Weiß:",
+                priceText5: "Startpreis Colored:",
+                projectTitle: "Meine Projekte",
+                formTitle: "Geben Sie Ihre Daten ein, um Feedback zu erhalten",
+                formName: "Ihr Vor- und Nachname",
+                formEmail: "Deine E-Mail",
+                formMessage: "Ihre Nachricht",
+                formBtn: "Schicken",
+            },
+          },
+    },
+    fallbackLng: 'en',
+    debug: true,
+    detection: {
+      order: ['localStorage', 'navigator'],
+    },
+  });
+
+export default i18n;
+// Hello, my name is Sofia, I'm an artist and a graphic designer. I'm interested in character design, animalism and illustration. <br/>Currently I am a graphic designer student. I'm inspired by art history, nature and literature. This page is my portfolio, you are welcome to investigate my works!

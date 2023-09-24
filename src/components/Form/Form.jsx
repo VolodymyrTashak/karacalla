@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import Notiflix from 'notiflix';
+import { useTranslation } from 'react-i18next';
 
 import icon from '../../images/icons-sprite.svg';
 
@@ -9,6 +10,7 @@ import { Backdrop, MyForm, ButtonClose, FormTitle, FormInput, FormTextarea, Form
 const body = document.querySelector('body');
 
 export const Form = ({ setModalOpen }) => {
+  const { t } = useTranslation();
 
     const closeModal = () => {
         setModalOpen(false);
@@ -70,11 +72,11 @@ export const Form = ({ setModalOpen }) => {
                <use href={`${icon}#icon-close`}></use>
              </svg>
             </ButtonClose>
-            <FormTitle>Fill in your details for feedback</FormTitle>
-            <FormInput type="text" id="fromName" name="fromName" placeholder="Your name and surname" required />
-            <FormInput type="email" id="email" placeholder="Your email" required />
-            <FormTextarea rows={3} id="message" name="message" placeholder="Your message" required />
-            <FormBtn type="submit">Send</FormBtn>
+            <FormTitle>{t('formTitle')}</FormTitle>
+            <FormInput type="text" id="fromName" name="fromName" placeholder={t('formName')} required />
+            <FormInput type="email" id="email" placeholder={t('formEmail')} required />
+            <FormTextarea rows={3} id="message" name="message" placeholder={t('formMessage')} required />
+            <FormBtn type="submit">{t('formBtn')}</FormBtn>
             </MyForm>
         </Backdrop>
     );

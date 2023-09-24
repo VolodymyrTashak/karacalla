@@ -12,7 +12,7 @@ export const PriceTitle = styled.h2`
  color: #000;
  text-align: center;
  font-size: 29px;
- font-weight: 400;
+ font-weight: 600;
  line-height: normal;
  letter-spacing: 5.8px;
  margin-bottom: 30px;
@@ -54,7 +54,7 @@ export const PriceContent = styled.div`
 export const PriceTitleSecond = styled.h3`
  color: #000;
  font-size: 24px;
- font-weight: 400;
+ font-weight: 600;
  line-height: 24px;
  letter-spacing: 3px;
  margin-bottom: 15px;
@@ -67,7 +67,7 @@ export const PriceText = styled.p`
  line-height: 18px;
  letter-spacing: 1px;
  margin: 10px 0;
- text-align: left;
+ text-align: center;
  `;
 
  export const PriceTextSecond = styled.span`

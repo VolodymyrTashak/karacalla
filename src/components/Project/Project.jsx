@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import image1 from "../../images/project/image1.webp"
 import image2 from "../../images/project/image2.webp"
 import image3 from "../../images/project/image3.webp"
@@ -9,10 +11,12 @@ import image5 from "../../images/project/image5.webp"
 import { ProjectSection, ProjectBox, ProjectTitle, ProjectList, ProjectItem, ProjectItemImg } from "./Project.styled";
 
 export const Project = () => {
+    const { t } = useTranslation();
+
     return (
     <ProjectSection id="project">
         <ProjectBox className="container">
-            <ProjectTitle>My Project</ProjectTitle>
+            <ProjectTitle>{t('projectTitle')}</ProjectTitle>
             <ProjectList>
              <ProjectItem>
               <ProjectItemImg src={image1} alt="image1"/>

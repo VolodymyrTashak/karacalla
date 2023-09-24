@@ -10,7 +10,7 @@ export const Backdrop = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const MyForm= styled.form`
@@ -37,8 +37,8 @@ export const ButtonClose = styled.button`
   cursor: pointer;
 
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 
   background-color: transparent;
   border: none;

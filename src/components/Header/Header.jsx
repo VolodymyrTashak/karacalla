@@ -1,34 +1,41 @@
-import { ScrollToTop } from "components/BtnTop/BtnTop";
+import { useTranslation } from 'react-i18next';
 
-import { Head, HeaderContainer, HeaderLogo, HeaderBox, HeaderList, HeaderItem, HeaderItemLink } from "./Header.styled";
+import { ScrollToTop } from "components/BtnTop/BtnTop";
+import LanguageSelector from "components/LanguageSelector/LanguageSelector";
+
+import { Head, HeaderWrapper, HeaderContainer, HeaderLogo, HeaderBox, HeaderList, HeaderItem, HeaderItemLink } from "./Header.styled";
 
 export const Header = () => {
+  const { t } = useTranslation();
+
     return (
       <Head>
-            <HeaderContainer className="container">
-              <ScrollToTop />
+        <HeaderWrapper className="container">
+          <LanguageSelector />
+          <HeaderContainer >
              <HeaderLogo href="#">karacalla</HeaderLogo>
              <HeaderBox>
               <HeaderList>
                 <HeaderItem>
-                  <HeaderItemLink href="#">Home</HeaderItemLink>
+                  <HeaderItemLink href="#">{t('headerHome')}</HeaderItemLink>
                 </HeaderItem>
                 <HeaderItem>
-                  <HeaderItemLink href="#about">About</HeaderItemLink>
+                  <HeaderItemLink href="#about">{t('headerAbout')}</HeaderItemLink>
                 </HeaderItem>
                 <HeaderItem>
-                  <HeaderItemLink href="#price">Price</HeaderItemLink>
+                  <HeaderItemLink href="#price">{t('headerPrice')}</HeaderItemLink>
                 </HeaderItem>
                 <HeaderItem>
-                  <HeaderItemLink href="#project">Project</HeaderItemLink>
+                  <HeaderItemLink href="#project">{t('headerProject')}</HeaderItemLink>
                 </HeaderItem>
                 <HeaderItem>
-                  <HeaderItemLink href="#contact">Contact</HeaderItemLink>
+                  <HeaderItemLink href="#contact">{t('headerContact')}</HeaderItemLink>
                 </HeaderItem>
               </HeaderList>
              </HeaderBox>
-            </HeaderContainer>
+          </HeaderContainer>
+        </HeaderWrapper>
+            <ScrollToTop />
       </Head>
     );
   };
-  

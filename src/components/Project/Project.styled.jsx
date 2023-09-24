@@ -15,7 +15,7 @@ export const ProjectTitle = styled.h2`
  color: #000;
  text-align: center;
  font-size: 29px;
- font-weight: 400;
+ font-weight: 600;
  line-height: normal;
  letter-spacing: 5.8px;
  margin-bottom: 30px;
